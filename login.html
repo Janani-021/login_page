@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0d0d2b, #8e44ad);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            width: 800px;
+            height: 500px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .image {
+            flex: 1;
+            background: url('plant.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .form-container {
+            flex: 1;
+            background: #8e44ad;
+            padding: 40px;
+            color: white;
+        }
+        .form-container h1 {
+            margin-bottom: 20px;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .form-container input[type="text"]::placeholder,
+        .form-container input[type="password"]::placeholder {
+            color: #ccc;
+        }
+        .form-container .btn {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: white;
+            cursor: pointer;
+        }
+        .form-container .btn:hover {
+            background: #555;
+        }
+        .form-container .link {
+            display: block;
+            text-align: center;
+            margin: 10px 0;
+            color: white;
+            text-decoration: none;
+        }
+        .form-container .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image"></div>
+        <div class="form-container">
+            <h1>WELCOME! , LOGIN</h1>
+            <form>
+                <label for="email">Email address /Phone number *</label>
+                <input type="text" id="email" name="email" placeholder="example@gmail.com" required>
+                <label for="password">Password *</label>
+                <input type="password" id="password" name="password" placeholder="**********" required>
+                <a href="#" class="link">Forget password</a>
+                <button type="submit" class="btn">Login now</button>
+                <h4>Don't have an account?</h4>
+                <button type="submit" class="btn">Create an account</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
